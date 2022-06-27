@@ -19,7 +19,7 @@
   "scripts": {
     "serve": "vite",
     "build": "pnpm run build:all",
-    "build:all": "pnpm run build:dev && pnpm run build:prod && pnpm run build:types",
+    "build:all": "rm -rf ../../dist/packages/petite-vue && pnpm run build:dev && pnpm run build:prod && pnpm run build:types",
     "build:dev": "MODE=dev vite build --mode development",
     "build:prod": "MODE=prod vite build --mode production",
     "build:types": "tsc --emitDeclarationOnly && mv ../../dist/packages/petite-vue/src ../../dist/packages/petite-vue/types",
