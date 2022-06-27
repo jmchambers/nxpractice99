@@ -1,0 +1,28 @@
+{
+  "name": "pet-vue-stdlib",
+  "version": "0.4.1",
+  "description": "A standard library of pet vue directives",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/pet-vue-stdlib.prod.umd.js",
+  "unpkg": "dist/pet-vue-stdlib.prod.iife.js",
+  "jsdelivr": "dist/pet-vue-stdlib.prod.iife.js",
+  "module": "./dist/pet-vue-stdlib.prod.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pet-vue-stdlib.prod.es.js",
+      "require": "./dist/pet-vue-stdlib.prod.umd.js"
+    }
+  },
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "serve": "vite",
+    "build": "pnpm run build:all",
+    "build:all": "rm -rf ../../dist/packages/pet-vue-stdlib && pnpm run build:dev && pnpm run build:prod && pnpm run build:types",
+    "build:dev": "MODE=dev vite build --mode development",
+    "build:prod": "MODE=prod vite build --mode production",
+    "build:types": "tsc --emitDeclarationOnly && mv ../../dist/packages/pet-vue-stdlib/src ../../dist/packages/pet-vue-stdlib/types && rm -rf ../../dist/packages/pet-vue/src"
+  },
+  "license": "MIT"
+}

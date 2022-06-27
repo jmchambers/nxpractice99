@@ -1,0 +1,11 @@
+<script type="module">
+  import { createApp } from '../../pet-vue/src';
+  import { show } from '../src';
+
+  createApp().directive('show', show).mount('#app');
+</script>
+
+<div id="app" v-scope="{ open: true }">
+  <button @click="open = !open">toggle</button>
+  <div v-show="open">ok</div>
+</div>
