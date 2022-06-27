@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist",
+    "declaration": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src"]
+}
