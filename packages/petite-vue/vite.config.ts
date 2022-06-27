@@ -16,7 +16,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'PetiteVue',
       formats: ['es', 'umd', 'iife'],
-      fileName: (format) => `runtime.${process.env.MODE}.${format}.js`,
+      fileName: (format) => `petite-vue.${process.env.MODE}.${format}.js`,
     },
     rollupOptions: {
       plugins: [

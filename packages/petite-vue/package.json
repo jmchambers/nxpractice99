@@ -1,18 +1,18 @@
 {
   "name": "petite-vue",
   "version": "0.4.1",
-  "description": "5kb subset of Vue optimized for progressive enhancement",
+  "description": "A subset of Vue optimized for progressive enhancement",
   "files": [
     "dist"
   ],
-  "main": "dist/petite-vue.umd.js",
-  "unpkg": "dist/petite-vue.iife.js",
-  "jsdelivr": "dist/petite-vue.iife.js",
-  "module": "./dist/petite-vue.es.js",
+  "main": "dist/petite-vue.prod.umd.js",
+  "unpkg": "dist/petite-vue.prod.iife.js",
+  "jsdelivr": "dist/petite-vue.prod.iife.js",
+  "module": "./dist/petite-vue.prod.es.js",
   "exports": {
     ".": {
-      "import": "./dist/petite-vue.es.js",
-      "require": "./dist/petite-vue.umd.js"
+      "import": "./dist/petite-vue.prod.es.js",
+      "require": "./dist/petite-vue.prod.umd.js"
     }
   },
   "types": "./dist/types/index.d.ts",
@@ -22,22 +22,8 @@
     "build:all": "rm -rf ../../dist/packages/petite-vue && pnpm run build:dev && pnpm run build:prod && pnpm run build:types",
     "build:dev": "MODE=dev vite build --mode development",
     "build:prod": "MODE=prod vite build --mode production",
-    "build:types": "tsc --emitDeclarationOnly && mv ../../dist/packages/petite-vue/src ../../dist/packages/petite-vue/types",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release": "node scripts/release.js"
+    "build:types": "tsc --emitDeclarationOnly && mv ../../dist/packages/petite-vue/src ../../dist/packages/petite-vue/types"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuejs/petite-vue.git"
-  },
-  "keywords": [
-    "vue"
-  ],
-  "author": "Evan You",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vuejs/petite-vue/discussions"
-  },
-  "homepage": "https://github.com/vuejs/petite-vue#readme",
   "devDependencies": {}
 }
