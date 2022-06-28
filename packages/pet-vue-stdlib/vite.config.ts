@@ -3,9 +3,12 @@ import { resolve } from 'path';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  esbuild: {
-    minify: true,
-  },
+  // esbuild: {
+  //   minify: true,
+  // },
+  // define: {
+  //   'process.env.NODE_ENV': JSON.stringify('yes-please'),
+  // },
   build: {
     outDir: '../../dist/packages/pet-vue-stdlib',
     emptyOutDir: false,

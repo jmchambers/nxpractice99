@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nxpractice99/pet-vue": ["packages/pet-vue/src/index.ts"],
+      "@nxpractice99/pet-vue-stdlib": ["packages/pet-vue-stdlib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

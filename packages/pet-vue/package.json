@@ -1,5 +1,5 @@
 {
-  "name": "pet-vue",
+  "name": "@nxpractice99/pet-vue",
   "version": "0.4.1",
   "description": "A subset of Vue optimized for progressive enhancement",
   "files": [
@@ -15,15 +15,10 @@
       "require": "./dist/pet-vue.prod.umd.js"
     }
   },
-  "types": "./dist/types/index.d.ts",
+  "types": "./types/index.d.ts",
   "scripts": {
     "serve": "vite",
-    "build": "pnpm run build:all",
-    "build:all": "rm -rf ../../dist/packages/pet-vue && pnpm run build:dev && pnpm run build:prod && pnpm run build:types",
-    "build:dev": "MODE=dev vite build --mode development",
-    "build:prod": "MODE=prod vite build --mode production",
-    "build:types": "tsc --emitDeclarationOnly && mv ../../dist/packages/pet-vue/src ../../dist/packages/pet-vue/types"
+    "build": "scripts/build"
   },
-  "license": "MIT",
-  "devDependencies": {}
+  "license": "MIT"
 }

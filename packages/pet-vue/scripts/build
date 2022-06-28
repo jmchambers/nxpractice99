@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+NAME="${PWD##*/}" # basename of PWD
+
+rm -rf ../../dist/packages/$NAME
+vite build --mode development
+vite build --mode production
+tsc --emitDeclarationOnly
+mv ../../dist/packages/$NAME/src ../../dist/packages/$NAME/types
+
+cat << EOF > ../../dist/packages/$NAME/index.js
+'use strict';
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./dist/$NAME.cjs.prod.js');
+} else {
+  module.exports = require('./dist/$NAME.cjs.js');
+}
+EOF
+

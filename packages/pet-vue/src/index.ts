@@ -1,10 +1,10 @@
-export { createApp } from './app'
-export { nextTick } from './scheduler'
-export { reactive } from '@vue/reactivity'
+export { createApp } from './app';
+export { nextTick } from './scheduler';
+export { reactive } from '@vue/reactivity';
 
-import { createApp } from './app'
+import { createApp } from './app';
 
-const s = document.currentScript
+const s = document.currentScript;
 if (s && s.hasAttribute('init')) {
-  createApp().mount()
+  createApp().mount();
 }
