@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.0](https://github.com/jmchambers/nxpractice99/compare/v0.1.4...v0.2.0) (2022-06-29)
+
+
+### Features
+
+* add github actions ([d362873](https://github.com/jmchambers/nxpractice99/commit/d362873b5b97e4aacf9bfe79a807ddd0af48d477))
+
 ## [0.1.4](https://github.com/jmchambers/nxpractice99/compare/v0.1.3...v0.1.4) (2022-06-29)
 
 ## [0.1.3](https://github.com/jmchambers/nxpractice99/compare/v0.1.2...v0.1.3) (2022-06-29)

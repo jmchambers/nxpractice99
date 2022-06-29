@@ -1,6 +1,6 @@
 {
   "name": "@nxpractice99/pet-vue",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A subset of Vue optimized for progressive enhancement",
   "files": [
     "index.js",
