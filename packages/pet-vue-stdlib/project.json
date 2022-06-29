@@ -6,6 +6,9 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
+        "push": true,
+        "noVerify": true,
+        "baseBranch": "last-release",
         "preset": "conventional"
       }
     }

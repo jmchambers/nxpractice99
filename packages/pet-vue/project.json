@@ -21,10 +21,9 @@
       "options": {
         "push": true,
         "noVerify": true,
-        "baseBranch": "master",
+        "baseBranch": "last-release",
         "preset": "conventional",
-        "postTargets": ["pet-vue:publish", "pet-vue:github"],
-        "versionTagPrefix": "v"
+        "postTargets": ["pet-vue:publish", "pet-vue:github"]
       }
     },
     "github": {
