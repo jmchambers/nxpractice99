@@ -22,7 +22,7 @@ runs:
       run: pnpm exec nx affected:build --base=last-release
     - name: Test
       shell: bash
-      run: pnpm exec nx affected:test --code-coverage
+      run: pnpm exec nx affected:test --code-coverage --base=last-release
     - name: E2E
       shell: bash
       run: pnpm exec nx affected:e2e --headless --base=last-release
