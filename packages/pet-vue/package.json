@@ -16,7 +16,7 @@
       "require": "./dist/pet-vue.prod.umd.js"
     }
   },
-  "types": "./types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "serve": "vite",
     "build": "scripts/build"

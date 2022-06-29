@@ -6,7 +6,7 @@ rm -rf ../../dist/packages/$NAME
 vite build --mode development
 vite build --mode production
 tsc --emitDeclarationOnly
-mv ../../dist/packages/$NAME/src ../../dist/packages/$NAME/types
+mv ../../dist/packages/$NAME/src ../../dist/packages/$NAME/dist/types
 cp README.md ../../dist/packages/$NAME/README.md
 cp LICENSE ../../dist/packages/$NAME/LICENSE
 
