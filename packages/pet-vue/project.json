@@ -21,7 +21,6 @@
       "options": {
         "push": true,
         "noVerify": true,
-        "baseBranch": "last-release",
         "preset": "conventional",
         "postTargets": ["pet-vue:publish", "pet-vue:github"]
       }
