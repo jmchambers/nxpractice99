@@ -39,6 +39,20 @@
       "options": {
         "access": "public"
       }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/pet-vue/**/*.ts"],
+        "force": true
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "packages/pet-vue/jest.config.ts",
+        "passWithNoTests": true
+      }
     }
   }
 }

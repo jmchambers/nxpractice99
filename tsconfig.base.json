@@ -1,19 +1,16 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom", "dom.iterable"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
+    "allowJs": false,
     "baseUrl": ".",
+    "rootDir": ".",
+    "declaration": false,
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "sourceMap": false,
+    "strict": true,
     "paths": {
       "@nxpractice99/pet-vue": ["packages/pet-vue/src/index.ts"],
       "@nxpractice99/pet-vue-stdlib": ["packages/pet-vue-stdlib/src/index.ts"]

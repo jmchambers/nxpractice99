@@ -3,10 +3,11 @@
 NAME="${PWD##*/}" # basename of PWD
 
 rm -rf ../../dist/packages/$NAME
+rm -rf ../../dist/out-tsc/packages/$NAME
 vite build --mode development
 vite build --mode production
-tsc --emitDeclarationOnly
-mv ../../dist/packages/$NAME/src ../../dist/packages/$NAME/dist/types
+tsc --emitDeclarationOnly --project ./tsconfig.lib.json
+cp -rf ../../dist/out-tsc/packages/$NAME/src ../../dist/packages/$NAME/dist/types
 cp README.md ../../dist/packages/$NAME/README.md
 cp LICENSE ../../dist/packages/$NAME/LICENSE
 

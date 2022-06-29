@@ -1,13 +1,16 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "../../dist",
-    "declaration": true,
-    "sourceMap": true,
-    "allowJs": false,
-    "strict": true,
-    "noUnusedLocals": true,
-    "types": ["vite/client", "node"]
+    "lib": ["es2017", "dom", "dom.iterable"]
   },
-  "include": ["src"]
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
 }

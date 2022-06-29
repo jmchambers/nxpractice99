@@ -31,6 +31,27 @@ runs:
         # and sets the NPM_CONFIG_USERCONFIG environment variable.
         registry-url: https://registry.npmjs.org
 
-    - name: yarn install
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2.0.1
+      id: pnpm-install
+      with:
+        version: 7
+        run_install: false
+
+    - name: Get pnpm store directory
+      id: pnpm-cache
       shell: bash
-      run: yarn install --immutable --immutable-cache
+      run: |
+        echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+    - uses: actions/cache@v3
+      name: Setup pnpm cache
+      with:
+        path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install

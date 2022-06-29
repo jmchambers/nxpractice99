@@ -16,7 +16,7 @@
 - Vue-compatible template syntax
 - DOM-based, mutates in place
 - Driven by `@vue/reactivity`
-- another small change!
+- another small change!!
 
 ## Status
 
