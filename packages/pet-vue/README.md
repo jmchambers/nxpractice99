@@ -1,5 +1,13 @@
 # pet-vue
 
+<a href="https://www.npmjs.com/package/@nxpractice99/pet-vue" rel="nofollow">
+  <img src="https://badgen.net/npm/v/@nxpractice99/pet-vue" alt="@nxpractice99/pet-vue NPM package">
+</a>
+
+<a href="https://codecov.io/gh/jmchambers/nxpractice99" rel="nofollow">
+  <img src="https://codecov.io/gh/jmchambers/nxpractice99/branch/master/graph/badge.svg?token=???????" alt="@nxpractice99/pet-vue coverage status" />
+</a>
+
 > NOTE: this is just a practice repo/package based on Petite Vue. DO NOT USE!
 
 `pet-vue` is an alternative distribution of [Vue](https://vuejs.org) optimized for [progressive enhancement](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement). It provides the same template syntax and reactivity mental model as standard Vue. However, it is specifically optimized for "sprinkling" a small amount of interactions on an existing HTML page rendered by a server framework. See more details on [how it differs from standard Vue](#comparison-with-standard-vue).
@@ -8,7 +16,7 @@
 - Vue-compatible template syntax
 - DOM-based, mutates in place
 - Driven by `@vue/reactivity`
-- another small change
+- another small change!
 
 ## Status
 
