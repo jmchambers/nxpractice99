@@ -8,6 +8,7 @@
 - Vue-compatible template syntax
 - DOM-based, mutates in place
 - Driven by `@vue/reactivity`
+- small change
 
 ## Status
 
