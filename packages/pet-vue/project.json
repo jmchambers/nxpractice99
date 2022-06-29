@@ -19,6 +19,7 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
+        "push": true,
         "baseBranch": "master",
         "preset": "conventional",
         "postTargets": ["pet-vue:publish", "pet-vue:github"],
