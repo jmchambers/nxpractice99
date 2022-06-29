@@ -47,7 +47,7 @@ export const createApp = (initialData?: any) => {
         el = document.querySelector(el);
         if (!el) {
           import.meta.env.DEV &&
-            console.error(`selector ${el} has no matching element!`);
+            console.error(`selector ${el} has no matching element.`);
           return;
         }
       }
