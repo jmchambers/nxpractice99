@@ -34,10 +34,6 @@ export default defineConfig(({ mode }) => {
           copy({
             targets: [
               {
-                src: 'README.md',
-                dest: `../../dist/packages/${name}`,
-              },
-              {
                 src: 'package.json',
                 dest: `../../dist/packages/${name}`,
                 transform: (contents) => {

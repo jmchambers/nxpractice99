@@ -3,7 +3,36 @@
   "sourceRoot": "packages/pet-vue/src",
   "projectType": "library",
   "targets": {
-    "deploy": {
+    "serve": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "serve"
+      }
+    },
+    "build": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "build",
+        "outputPath": "dist/packages/pet-vue"
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "baseBranch": "master",
+        "preset": "conventional",
+        "postTargets": ["pet-vue:publish", "pet-vue:github"],
+        "versionTagPrefix": "v"
+      }
+    },
+    "github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}"
+      }
+    },
+    "publish": {
       "executor": "ngx-deploy-npm:deploy",
       "options": {
         "access": "public"

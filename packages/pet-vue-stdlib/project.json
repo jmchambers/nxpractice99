@@ -2,6 +2,13 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/pet-vue-stdlib/src",
   "projectType": "library",
-  "targets": {},
+  "targets": {
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional"
+      }
+    }
+  },
   "tags": []
 }

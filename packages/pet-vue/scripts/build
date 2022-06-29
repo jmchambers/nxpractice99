@@ -7,6 +7,8 @@ vite build --mode development
 vite build --mode production
 tsc --emitDeclarationOnly
 mv ../../dist/packages/$NAME/src ../../dist/packages/$NAME/types
+cp README.md ../../dist/packages/$NAME/README.md
+cp LICENSE ../../dist/packages/$NAME/LICENSE
 
 cat << EOF > ../../dist/packages/$NAME/index.js
 'use strict';
