@@ -1,6 +1,6 @@
 {
   "name": "@nxpractice99/pet-vue-stdlib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A standard library of pet vue directives",
   "files": [
     "dist"
