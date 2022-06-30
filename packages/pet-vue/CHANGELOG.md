@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.2](https://github.com/jmchambers/nxpractice99/compare/v0.2.1...v0.2.2) (2022-06-30)
+
 ## [0.2.1](https://github.com/jmchambers/nxpractice99/compare/pet-vue-0.2.0...pet-vue-0.2.1) (2022-06-29)
 
 
