@@ -9,7 +9,8 @@
         "push": true,
         "noVerify": true,
         "baseBranch": "master",
-        "preset": "conventional"
+        "preset": "conventional",
+        "tagPrefix": "pet-vue-stdlib@"
       }
     }
   },

@@ -23,6 +23,7 @@
         "noVerify": true,
         "baseBranch": "master",
         "preset": "conventional",
+        "tagPrefix": "v",
         "postTargets": ["pet-vue:publish", "pet-vue:github"]
       }
     },
