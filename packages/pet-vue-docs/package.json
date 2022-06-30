@@ -1,0 +1,10 @@
+{
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "serve": "vitepress dev",
+    "build": "scripts/build",
+    "serve:prod": "vitepress serve"
+  }
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+NAME="${PWD##*/}" # basename of PWD
+
+rm -rf ../../dist/packages/$NAME
+vitepress build
+cp README.md ../../dist/packages/$NAME/README.md
+cp LICENSE ../../dist/packages/$NAME/LICENSE
+cp package.json ../../dist/packages/$NAME/package.json

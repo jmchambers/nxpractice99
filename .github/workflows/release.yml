@@ -31,7 +31,9 @@ jobs:
     needs: [test]
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Setup
         uses: ./.github/actions/setup
 
